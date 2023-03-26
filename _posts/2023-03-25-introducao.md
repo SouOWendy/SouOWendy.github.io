@@ -1,5 +1,5 @@
 ---
-title: "Introdução: Como e porque vim parar aqui"
+title: "Introdução: Como e por quê vim parar aqui"
 locale: pt-BR
 categories:
   - Uncategorized
