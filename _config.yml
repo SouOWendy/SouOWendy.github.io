@@ -35,6 +35,11 @@ remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 minimal_mistakes_skin: neon
 plugins:
   - jekyll-feed
+  - jekyll-paginate
+  - jekyll-gist
+  - jemoji
+  - jekyll-include-cache
+
 
 locale: "pt-BR"
 
