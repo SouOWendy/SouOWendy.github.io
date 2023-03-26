@@ -1,0 +1,15 @@
+Wenderson Santos:
+  name        : "Wenderson Santos"
+  bio         : "Just keep swimming..."
+  avatar      : "https://avatars.githubusercontent.com/u/128555274?s=400&u=559b38fcbe4386570dbc5711d45ac5620407c2c9&v=4"
+  location: Brasília, BR
+  links:
+    - label: GitHub
+      icon: fab fa-fw fa-github
+      url: https://github.com/SouOWendy
+    - label: Instagram
+      icon: fab fa-fw fa-instagram
+      url: https://instagram.com/SouOWendy
+    - label: LinkedIn
+      icon: fab fa-fw fa-linkedin
+      url: https://linkedin.com/in/wsoares-

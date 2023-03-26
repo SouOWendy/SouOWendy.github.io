@@ -18,27 +18,11 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Sou o Wendy
-email: ssantos.wendy42@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Aqui você encontrará artigos sobre minhas
-  incríveis aventuras no mundo da computação.
+locale: "pt-BR"
+encoding: "utf-8"
 
-baseurl: "" # the subpath of your site, e.g. /blog
-domain: souowendy.github.io
-url: https://souowendy.github.io # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: 
-github_username: SouOWendy
-
-# Build settings
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 minimal_mistakes_skin: neon
-plugins:
-  - jekyll-feed
-  - jekyll-paginate
-  - jekyll-gist
-  - jemoji
-  - jekyll-include-cache
 
 defaults:
   # _posts
@@ -47,14 +31,73 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: false
-      read_time: false
+      author_profile: true
+      read_time: true
       comments: false
       share: true
       related: false
+    # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
 
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-gist
+  - jemoji
+  - jekyll-include-cache
 
-locale: "pt-BR"
+title: Sou o Wendy
+title_separator: "|"
+subtitle: Um blog simples de programação
+
+name: &name Wenderson Santos
+email: ssantos.wendy42@gmail.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Aqui você encontrará artigos sobre minhas
+  incríveis aventuras no mundo da computação.
+
+baseurl: "" # the subpath of your site, e.g. /blog
+domain: souowendy.github.io
+url: https://souowendy.github.io # the base hostname & protocol for your site, e.g. http://example.com
+
+teaser: # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+logo: # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+
+author:
+  name: *name
+  avatar: #
+  bio: Just keep swimming...
+  location: Brasília, BR
+  links:
+    - label: GitHub
+      icon: fab fa-fw fa-github
+      url: https://github.com/SouOWendy
+    - label: Instagram
+      icon: fab fa-fw fa-instagram
+      url: https://instagram.com/SouOWendy
+    - label: LinkedIn
+      icon: fab fa-fw fa-linkedin
+      url: https://linkedin.com/in/wsoares-
+
+footer:
+  links:
+    - label: GitHub
+      icon: fab fa-fw fa-github
+      url: https://github.com/SouOWendy
+    - label: Instagram
+      icon: fab fa-fw fa-instagram
+      url: https://instagram.com/SouOWendy
+    - label: LinkedIn
+      icon: fab fa-fw fa-linkedin
+      url: https://linkedin.com/in/wsoares-
+  
+permalink: /:title/
+timezone: America/Sao_Paulo
 
 # Exclude from processing.
 # The following items will not be processed, by default.
